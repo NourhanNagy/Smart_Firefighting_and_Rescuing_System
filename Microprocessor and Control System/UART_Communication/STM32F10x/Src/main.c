@@ -27,28 +27,28 @@ int main(void)
 	{	
 		if(MUSART1_u8Receive() == "Q1")
 		{
-			MGPIO_VidSetPinValue(GPIOA,PIN5,HIGH);
+			#Write down from the Servo motor's functions what you see fit
 		}
 		else if(MUSART1_u8Receive() == "Q2")
 		{
-			MGPIO_VidSetPinValue(GPIOA,PIN5,HIGH);
+			#Write down from the Servo motor's functions what you see fit
 		}
 		else if(MUSART1_u8Receive() == "Q3")
 		{
-			MGPIO_VidSetPinValue(GPIOA,PIN5,HIGH);
+			#Write down from the Servo motor's functions what you see fit
 		}
 		else if(MUSART1_u8Receive() == "Q4")
 		{
-			MGPIO_VidSetPinValue(GPIOA,PIN5,HIGH);
+			#Write down from the Servo motor's functions what you see fit
 		}
 		else if(MUSART1_u8Receive() == "NF")
 		{
-			//Shut system Down
+			//Shut system Down 
 		}
 		else 
 		{
 			//DO NOTHINHG
-			//DO NOTHINHG
+			
 		}
 		
 	}
