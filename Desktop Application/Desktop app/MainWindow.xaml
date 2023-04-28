@@ -1,0 +1,82 @@
+﻿<Window x:Class="Graduation_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graduation_1"
+        Title="MainWindow" Height="1080" Width="1920"
+        Loaded="Window_Loaded"
+       >
+    <Window.Background>
+<!--<ImageBrush ImageSource="/Images/Back ground.jpg" Opacity=".35" />-->
+        <ImageBrush ImageSource="/Images/Back1.jpg" Opacity=".6" />
+
+
+    </Window.Background>
+
+    <!--<Window.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
+            <GradientStop Color="#1D1A39" Offset="0.15"></GradientStop>
+            <GradientStop Color="#451925" Offset="0.3"></GradientStop>
+            <GradientStop Color="#662549" Offset="0.4"></GradientStop>
+            <GradientStop Color="#AE445A" Offset="0.55"></GradientStop>
+            <GradientStop Color="#F39F5A" Offset=".85"></GradientStop>
+            <GradientStop Color="#E8BCB9" Offset="1"></GradientStop>
+
+        </LinearGradientBrush>
+    </Window.Background>-->
+
+    <Canvas >
+        <Button x:Name="manOpBtn" 
+                Canvas.Left="50"
+                Canvas.Top="50"
+                Click="manOpBtn_Click" 
+                Width="200"
+                Height="200"
+                Content="Manual Operation"
+                Foreground="BlanchedAlmond"
+                FontSize="20"
+        Background="DarkSlateGray"  BorderThickness="0" >
+           
+        </Button>
+        
+        <TextBox x:Name="roomBox" Canvas.Left="300" Canvas.Top="300" Width="200" Height="80"  Background="BlanchedAlmond"/>
+        <Button x:Name="sytemOnBtn" 
+                Canvas.Left="300"
+                Canvas.Top="50"
+                Click="sytemOnBtn_Click" 
+                Width="200"
+                Height="200"
+                Content="System On"
+                Foreground="BlanchedAlmond"
+                FontSize="20"
+                Background="Green"  BorderThickness="0" >
+                
+        </Button>
+        <Button x:Name="sytemOffBtn" 
+                Canvas.Left="600"
+                Canvas.Top="50"
+                Click="sytemOffBtn_Click" 
+                Width="200"
+                Height="200"
+                Content="System Off"
+                Foreground="BlanchedAlmond"
+                FontSize="20"
+                Background="Red"  BorderThickness="0" >
+        </Button>
+        <Button x:Name="monitoringBtn" 
+                Canvas.Left="900"
+                Canvas.Top="50"
+                Click="monitoringBtn_Click" 
+                Width="200"
+                Height="200"
+                Content="Monitoring"
+                Foreground="BlanchedAlmond"
+                FontSize="20"
+                Background="DarkSlateBlue"  BorderThickness="0" >
+        </Button>
+        
+        
+        
+    </Canvas>
+</Window>
